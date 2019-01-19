@@ -10,7 +10,9 @@ class QuizQuestion extends Component {
           <p>{quiz_question.instruction_text}</p>
         </section>
         <section className="buttons">
-          <ul>{quiz_question.answer_options[0]}</ul>
+          <ul>
+            <li>{quiz_question.answer_options[0]}</li>
+          </ul>
         </section>
       </main>
     );

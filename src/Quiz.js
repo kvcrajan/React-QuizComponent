@@ -16,13 +16,11 @@ class Quiz extends Component {
 
     return (
       <div>
-        {isQuizEnd ? (
-          <QuizEnd />
-        ) : (
-          <QuizQuestion
-            quiz_question={quizData.quiz_questions[quiz_position - 1]}
-          />
-        )}
+        {
+          isQuizEnd 
+            ? <QuizEnd /> 
+            : <QuizQuestion quiz_question={quizData.quiz_questions[quiz_position - 1]} />
+        }
       </div>
     );
   }
